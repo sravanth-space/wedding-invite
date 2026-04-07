@@ -1,24 +1,24 @@
 export const inviteConfig = {
   couple: {
     title: "The Wedding Of",
-    groomName: "Akshay",
-    brideName: "Kaviya",
+    groomName: "Sravanth",
+    brideName: "Samaikya",
     heroMessage: "PLEASE JOIN US IN THE CELEBRATION\\nOF OUR WEDDING",
   },
   home: {
-    time: "7:30 AM",
-    dateLabel: "16 February 2027",
-    locationLabel: "Charulatha Mahal A/C Chennai\\nTrichy Hwy, Ulundurpet, Tamil Nadu 606107",
+    time: "night 12:15",
+    dateLabel: "03 May 2026",
+    locationLabel: "Babu and Babu",
   },
   brideAndGroom: {
     groom: {
-      name: "R. Akshay",
-      details: "Son of Mr. & Mrs. Rajendran and Latha",
+      name: "B. Sravanth",
+      details: "Son of Mr. & Mrs. Nagaraju and Bharathi",
       image: "https://akshay-kaviya-6.pages.dev/assets/images/r.jpg",
     },
     bride: {
-      name: "G. Kaviya",
-      details: "Daughter of Mr. & Mrs. Gowthaman and Tamilselvi",
+      name: "G. Samaikya",
+      details: "Daughter of Mr. & Mrs. Srinivasa Rao and Subhashini",
       image: "https://akshay-kaviya-6.pages.dev/assets/images/k.jpg",
     },
   },
@@ -46,8 +46,8 @@ export const inviteConfig = {
   ],
   countdown: {
     heading: "We Are Getting Married",
-    subheading: "On Monday 10th February",
-    targetDateTime: "2027-02-10T10:30:00+05:30",
+    subheading: "On Sunday 3rd May 2026",
+    targetDateTime: "2026-05-03T00:00:00+05:30",
   },
   invitationText: {
     heading: "Dear Family & Friends",
