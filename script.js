@@ -1,5 +1,39 @@
 const openBtn = document.getElementById("open-invite-btn");
 const welcome = document.getElementById("welcome");
+const musicBtn = document.getElementById("button-music");
+
+const bgAudio = new Audio("https://akshay-kaviya-6.pages.dev/assets/music/sound.mp3");
+bgAudio.loop = true;
+bgAudio.preload = "auto";
+
+function setMusicButtonState(isPlaying) {
+  if (!musicBtn) return;
+
+  musicBtn.innerHTML = isPlaying
+    ? '<i class="fa-solid fa-circle-pause"></i>'
+    : '<i class="fa-solid fa-circle-play"></i>';
+  musicBtn.setAttribute(
+    "aria-label",
+    isPlaying ? "Pause background music" : "Play background music",
+  );
+  musicBtn.setAttribute(
+    "title",
+    isPlaying ? "Pause background music" : "Play background music",
+  );
+}
+
+function toggleMusic() {
+  if (!musicBtn) return;
+
+  if (bgAudio.paused) {
+    bgAudio.play();
+    setMusicButtonState(true);
+    return;
+  }
+
+  bgAudio.pause();
+  setMusicButtonState(false);
+}
 
 function pad(value) {
   return String(value).padStart(2, "0");
@@ -57,6 +91,11 @@ function revealInvite() {
   welcome.classList.add("welcome-hidden");
   document.body.style.overflow = "auto";
   window.AOS?.init({ duration: 1200, once: true });
+  if (musicBtn) {
+    musicBtn.hidden = false;
+  }
+  bgAudio.play();
+  setMusicButtonState(true);
   launchConfetti();
 }
 
@@ -64,3 +103,4 @@ document.body.style.overflow = "hidden";
 startCountdown();
 
 openBtn?.addEventListener("click", revealInvite);
+musicBtn?.addEventListener("click", toggleMusic);

@@ -323,6 +323,26 @@ body {
     font-size: 2rem;
 }
 
+.btn-music {
+    position: fixed;
+    right: 0.85rem;
+    bottom: 5.2rem;
+    z-index: 1085;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #142d1c;
+    color: #f9f2df;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-music:hover {
+    background-color: #1c3a25;
+    color: #fff6e4;
+}
+
 @keyframes scroll {
     0% {
         opacity: 0;
