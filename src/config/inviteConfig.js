@@ -14,12 +14,12 @@ export const inviteConfig = {
     groom: {
       name: "B. Sravanth",
       details: "Son of Mr. & Mrs. Nagaraju and Bharathi",
-      image: "https://akshay-kaviya-6.pages.dev/assets/images/r.jpg",
+      image: "/assets/images/r.jpg",
     },
     bride: {
       name: "G. Samaikya",
       details: "Daughter of Mr. & Mrs. Srinivasa Rao and Subhashini",
-      image: "https://akshay-kaviya-6.pages.dev/assets/images/k.jpg",
+      image: "/assets/images/k.jpg",
     },
   },
   events: [
@@ -58,14 +58,14 @@ export const inviteConfig = {
   gallery: {
     title: "Happy Moments",
     carouselOne: [
-      "https://akshay-kaviya-6.pages.dev/assets/images/slide4.jpg",
-      "https://akshay-kaviya-6.pages.dev/assets/images/slide5.jpg",
-      "https://akshay-kaviya-6.pages.dev/assets/images/slide6.jpg",
+      "/assets/images/slide4.jpg",
+      "/assets/images/slide5.jpg",
+      "/assets/images/slide6.jpg",
     ],
     carouselTwo: [
-      "https://akshay-kaviya-6.pages.dev/assets/images/slide1.jpg",
-      "https://akshay-kaviya-6.pages.dev/assets/images/slide2.jpg",
-      "https://akshay-kaviya-6.pages.dev/assets/images/slide3.jpg",
+      "/assets/images/slide1.jpg",
+      "/assets/images/slide2.jpg",
+      "/assets/images/slide3.jpg",
     ],
   },
   closing: {
@@ -74,15 +74,15 @@ export const inviteConfig = {
     sub: "Save the date and celebrate with us!",
   },
   media: {
-    musicUrl: "https://akshay-kaviya-6.pages.dev/assets/music/sound.mp3",
-    welcomeImage: "https://akshay-kaviya-6.pages.dev/assets/images/welcome.png",
+    musicUrl: "/assets/music/sound.mp3",
+    welcomeImage: "/assets/images/welcome.png",
     decorations: {
-      left: "https://akshay-kaviya-6.pages.dev/assets/images/left.png",
-      right: "https://akshay-kaviya-6.pages.dev/assets/images/right.png",
-      topLeft: "https://akshay-kaviya-6.pages.dev/assets/images/topLeft.png",
-      topRight: "https://akshay-kaviya-6.pages.dev/assets/images/topRight.png",
-      center: "https://akshay-kaviya-6.pages.dev/assets/images/center.png",
-      bgPattern: "https://akshay-kaviya-6.pages.dev/assets/images/bg.png",
+      left: "/assets/images/left.png",
+      right: "/assets/images/right.png",
+      topLeft: "/assets/images/topLeft.png",
+      topRight: "/assets/images/topRight.png",
+      center: "/assets/images/center.png",
+      bgPattern: "/assets/images/bg.png",
     },
   },
 };
