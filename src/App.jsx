@@ -41,15 +41,51 @@ export default function App() {
     };
   }, [audio]);
 
+  const playOpeningConfetti = () => {
+    const endTime = performance.now() + 9000;
+    let frame = 0;
+
+    const shoot = () => {
+      frame += 1;
+
+      if (frame % 8 === 0) {
+        confetti({
+          particleCount: 2,
+          angle: 60,
+          spread: 60,
+          origin: { x: 0.12, y: 0 },
+          startVelocity: 18,
+          gravity: 1.15,
+          ticks: 260,
+          scalar: 0.9,
+          colors: ["#2d5b44", "#d9a86c", "#f3d8b1", "#f7ebda"],
+        });
+
+        confetti({
+          particleCount: 2,
+          angle: 120,
+          spread: 60,
+          origin: { x: 0.88, y: 0 },
+          startVelocity: 18,
+          gravity: 1.15,
+          ticks: 260,
+          scalar: 0.9,
+          colors: ["#2d5b44", "#d9a86c", "#f3d8b1", "#f7ebda"],
+        });
+      }
+
+      if (performance.now() < endTime) {
+        window.requestAnimationFrame(shoot);
+      }
+    };
+
+    shoot();
+  };
+
   const openInvite = () => {
     setIsInviteOpen(true);
 
-    confetti({
-      particleCount: 90,
-      spread: 70,
-      origin: { y: 0.62 },
-      colors: ["#2d5b44", "#d9a86c", "#f3d8b1", "#f7ebda"],
-    });
+    playOpeningConfetti();
 
     audio.play().then(() => {
       setIsMusicPlaying(true);
