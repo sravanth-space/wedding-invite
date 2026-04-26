@@ -14,12 +14,12 @@ export const inviteConfig = {
     groom: {
       name: "B. Sravanth",
       details: "Son of Mr. & Mrs. Nagaraju and Bharathi",
-      image: "/assets/images/r.jpg",
+      image: "/assets/images/sravanth.JPG",
     },
     bride: {
       name: "G. Samaikya",
       details: "Daughter of Mr. & Mrs. Srinivasa Rao and Subhashini",
-      image: "/assets/images/k.jpg",
+      image: "/assets/images/samaikya.png",
     },
   },
   events: [
@@ -53,19 +53,19 @@ export const inviteConfig = {
     heading: "Dear Family & Friends",
     body: "We are delighted to announce our marriage and invite you to celebrate this special moment with us. Your love and support mean the world to us, and your presence will make our day complete. Join us for an evening of joy, laughter, and cherished memories as we begin our journey together. We look forward to sharing this unforgettable day with you!",
     signoff: "With love and excitement,",
-    family: "RK and Family",
+    family: "Sravanth & Samaikya Family",
   },
   gallery: {
     title: "Happy Moments",
     carouselOne: [
-      "/assets/images/slide4.jpg",
-      "/assets/images/slide5.jpg",
-      "/assets/images/slide6.jpg",
+      // "/assets/images/slide4.jpg",
+      // "/assets/images/slide5.jpg",
+      // "/assets/images/slide6.jpg",
     ],
     carouselTwo: [
-      "/assets/images/slide1.jpg",
-      "/assets/images/slide2.jpg",
-      "/assets/images/slide3.jpg",
+      // "/assets/images/slide1.jpg",
+      // "/assets/images/slide2.jpg",
+      // "/assets/images/slide3.jpg",
     ],
   },
   closing: {
