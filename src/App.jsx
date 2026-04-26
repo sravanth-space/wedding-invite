@@ -298,7 +298,6 @@ export default function App() {
             ) : (
               <h2 className="font-esthetic overlay-title">{inviteConfig.couple.title}</h2>
             )}
-            {/* <h2 className="font-esthetic overlay-names">{inviteConfig.couple.groomName} &amp; {inviteConfig.couple.brideName}</h2> */}
             <button type="button" className="btn btn-light shadow rounded-4 mt-3" onClick={openInvite}>
               <i className="fa-solid fa-envelope-open me-2" />Open Invitation
             </button>
