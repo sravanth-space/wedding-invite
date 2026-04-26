@@ -8,7 +8,7 @@ export const inviteConfig = {
   home: {
     time: "night 12:15",
     dateLabel: "03 May 2026",
-    locationLabel: "Babu and Babu",
+    locationLabel: "Babu and Babu Convention",
   },
   brideAndGroom: {
     groom: {
@@ -25,24 +25,24 @@ export const inviteConfig = {
   events: [
     {
       title: "Reception",
-      venue: "Chakravarthy Lalitha A/C Marriage Hall",
-      time: "6:00 PM",
-      date: "9 February 2027",
-      address: "M7QJ+5X8, Chennai - Trichy Hwy, Ulundurpet, Tamil Nadu 606107",
+      venue: "Babu and Babu Convention",
+      time: "7:00 PM",
+      date: "3 May 2026",
+      address: "Alamuru, road, beside Ayyapa swamy temple, Mandapeta, Andhra Pradesh 533308",
       mapEmbed:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.0917730903266!2d79.2824605!3d11.687908199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab51fd85b06c2d%3A0x65dfff4e2e62469d!2sChakravarthy%20Lalitha%20A%2FC%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1733794521997!5m2!1sen!2sin",
-      mapLink: "https://maps.app.goo.gl/PKykJg1DbEM9gFpW8",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.4072051304192!2d81.92278379999999!3d16.8557393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37973906aeba39%3A0xe1e87f4e036f508a!2sBabu%20%26%20Babu%20Convention%20and%20Rooms!5e0!3m2!1sen!2sin!4v1777195169177!5m2!1sen!2sin",
+      mapLink: "https://maps.app.goo.gl/X36ZR7wZhNXcdV8j9",
     },
-    {
-      title: "Wedding",
-      venue: "Chakravarthy Lalitha A/C Marriage Hall",
-      time: "10:30 - 12:00 AM",
-      date: "10 February 2027",
-      address: "M7QJ+5X8, Chennai - Trichy Hwy, Ulundurpet, Tamil Nadu 606107",
-      mapEmbed:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.0917730903266!2d79.2824605!3d11.687908199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab51fd85b06c2d%3A0x65dfff4e2e62469d!2sChakravarthy%20Lalitha%20A%2FC%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1733794521997!5m2!1sen!2sin",
-      mapLink: "https://maps.app.goo.gl/PKykJg1DbEM9gFpW8",
-    },
+    // {
+    //   title: "Wedding",
+    //   venue: "Chakravarthy Lalitha A/C Marriage Hall",
+    //   time: "10:30 - 12:00 AM",
+    //   date: "10 February 2027",
+    //   address: "Alamuru, road, beside Ayyapa swamy temple, Mandapeta, Andhra Pradesh 533308",
+    //   mapEmbed:
+    //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.4072051304192!2d81.92278379999999!3d16.8557393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37973906aeba39%3A0xe1e87f4e036f508a!2sBabu%20%26%20Babu%20Convention%20and%20Rooms!5e0!3m2!1sen!2sin!4v1777195169177!5m2!1sen!2sin",
+    //   mapLink: "https://maps.app.goo.gl/X36ZR7wZhNXcdV8j9",
+    // },
   ],
   countdown: {
     heading: "We Are Getting Married",
