@@ -4,8 +4,8 @@ export const inviteConfig = {
   couple: {
     title: "SS Wedding",
     titleLogo: "assets/images/Wedding.png",
-    // groomName: "Sravanth",
-    // brideName: "Samaikya",
+    groomName: "Sravanth",
+    brideName: "Samaikya",
     heroMessage: "PLEASE JOIN US IN THE CELEBRATION\\nOF OUR WEDDING",
   },
   home: {
