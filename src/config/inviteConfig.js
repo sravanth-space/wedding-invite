@@ -16,12 +16,12 @@ export const inviteConfig = {
   brideAndGroom: {
     groom: {
       name: "Sravanth Baratam",
-      details: "Younger Son of Mr. & Mrs. Nagaraju Baratam and Bharathi Baratam",
+      details: "Younger Son of Mr. & Mrs. Nagaraju and Bharathi",
       image: withBase("assets/images/sravanth.jpeg"),
     },
     bride: {
       name: "Samaikya Gudla",
-      details: "Only daughter of Mr. & Mrs. Srinivasa Rao Gudla and Subhashini Gudla",
+      details: "Only daughter of Mr. & Mrs. Srinivasa Rao and Subhashini",
       image: withBase("assets/images/samaikya.png"),
     },
   },
