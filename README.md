@@ -16,6 +16,16 @@ yarn build
 yarn preview
 ```
 
+## Deploy to GitHub Pages
+
+This repo is set up for GitHub Pages via GitHub Actions.
+
+1. Push your changes to `main`.
+2. In GitHub, open `Settings` > `Pages`.
+3. Set `Source` to `Deploy from a branch`.
+4. Select `gh-pages` and `/ (root)`.
+5. After the workflow completes, open the Pages URL from the repository settings.
+
 ## Easy configuration
 
 Edit one file:

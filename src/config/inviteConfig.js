@@ -1,3 +1,5 @@
+const withBase = (path) => `${import.meta.env.BASE_URL.replace(/\/$/, "")}/${path.replace(/^\/+/, "")}`;
+
 export const inviteConfig = {
   couple: {
     title: "The Wedding Of",
@@ -14,12 +16,12 @@ export const inviteConfig = {
     groom: {
       name: "B. Sravanth",
       details: "Son of Mr. & Mrs. Nagaraju and Bharathi",
-      image: "/assets/images/sravanth.JPG",
+      image: withBase("assets/images/sravanth.JPG"),
     },
     bride: {
       name: "G. Samaikya",
       details: "Daughter of Mr. & Mrs. Srinivasa Rao and Subhashini",
-      image: "/assets/images/samaikya.png",
+      image: withBase("assets/images/samaikya.png"),
     },
   },
   events: [
@@ -74,15 +76,15 @@ export const inviteConfig = {
     sub: "Save the date and celebrate with us!",
   },
   media: {
-    musicUrl: "/assets/music/sound.mp3",
-    welcomeImage: "/assets/images/welcome.png",
+    musicUrl: withBase("assets/music/sound.mp3"),
+    welcomeImage: withBase("assets/images/welcome.png"),
     decorations: {
-      left: "/assets/images/left.png",
-      right: "/assets/images/right.png",
-      topLeft: "/assets/images/topLeft.png",
-      topRight: "/assets/images/topRight.png",
-      center: "/assets/images/center.png",
-      bgPattern: "/assets/images/bg.png",
+      left: withBase("assets/images/left.png"),
+      right: withBase("assets/images/right.png"),
+      topLeft: withBase("assets/images/topLeft.png"),
+      topRight: withBase("assets/images/topRight.png"),
+      center: withBase("assets/images/center.png"),
+      bgPattern: withBase("assets/images/bg.png"),
     },
   },
 };
