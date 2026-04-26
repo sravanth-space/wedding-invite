@@ -22,7 +22,7 @@ export const inviteConfig = {
     bride: {
       name: "Samaikya Gudla",
       details: "Only daughter of Mr. & Mrs. Srinivasa Rao and Subhashini",
-      image: withBase("assets/images/samaikya.png"),
+      image: withBase("assets/images/samaikya.jpg"),
     },
   },
   events: [
