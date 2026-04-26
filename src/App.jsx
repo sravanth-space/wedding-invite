@@ -288,7 +288,7 @@ export default function App() {
       <div className={`loading-page welcome-page ${isInviteOpen ? "welcome-hidden" : ""}`} id="welcome">
         <div className="d-flex justify-content-center align-items-center h-100">
           <div className="text-center">
-            <img src={inviteConfig.media.welcomeImage} className="img-center-crop mb-4 mx-auto" alt="Welcome emblem" />
+            <img src={inviteConfig.media.welcomeImage} className="img-center-crop mb-2 mx-auto" alt="Welcome emblem" />
             {inviteConfig.couple.titleLogo ? (
               <img
                 src={inviteConfig.couple.titleLogo}
