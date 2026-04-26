@@ -289,8 +289,16 @@ export default function App() {
         <div className="d-flex justify-content-center align-items-center h-100">
           <div className="text-center">
             <img src={inviteConfig.media.welcomeImage} className="img-center-crop mb-4 mx-auto" alt="Welcome emblem" />
-            <h2 className="font-esthetic overlay-title">{inviteConfig.couple.title}</h2>
-            <h2 className="font-esthetic overlay-names">{inviteConfig.couple.groomName} &amp; {inviteConfig.couple.brideName}</h2>
+            {inviteConfig.couple.titleLogo ? (
+              <img
+                src={inviteConfig.couple.titleLogo}
+                className="overlay-logo mx-auto"
+                alt={inviteConfig.couple.title}
+              />
+            ) : (
+              <h2 className="font-esthetic overlay-title">{inviteConfig.couple.title}</h2>
+            )}
+            {/* <h2 className="font-esthetic overlay-names">{inviteConfig.couple.groomName} &amp; {inviteConfig.couple.brideName}</h2> */}
             <button type="button" className="btn btn-light shadow rounded-4 mt-3" onClick={openInvite}>
               <i className="fa-solid fa-envelope-open me-2" />Open Invitation
             </button>

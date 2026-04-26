@@ -319,6 +319,14 @@ body {
     font-size: 2.4rem;
 }
 
+.overlay-logo {
+    display: block;
+    width: min(72vw, 280px);
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 .overlay-names {
     font-size: 2rem;
 }

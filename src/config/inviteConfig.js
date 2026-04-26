@@ -2,9 +2,10 @@ const withBase = (path) => `${import.meta.env.BASE_URL.replace(/\/$/, "")}/${pat
 
 export const inviteConfig = {
   couple: {
-    title: "The Wedding Of",
-    groomName: "Sravanth",
-    brideName: "Samaikya",
+    title: "SS Wedding",
+    titleLogo: "assets/images/Wedding.png",
+    // groomName: "Sravanth",
+    // brideName: "Samaikya",
     heroMessage: "PLEASE JOIN US IN THE CELEBRATION\\nOF OUR WEDDING",
   },
   home: {
@@ -60,14 +61,14 @@ export const inviteConfig = {
   gallery: {
     title: "Happy Moments",
     carouselOne: [
-      // "/assets/images/slide4.jpg",
-      // "/assets/images/slide5.jpg",
-      // "/assets/images/slide6.jpg",
+      withBase("assets/images/slide4.jpg"),
+      withBase("assets/images/slide5.jpg"),
+      withBase("assets/images/slide6.jpg"),
     ],
     carouselTwo: [
-      // "/assets/images/slide1.jpg",
-      // "/assets/images/slide2.jpg",
-      // "/assets/images/slide3.jpg",
+      withBase("assets/images/slide1.jpg"),
+      withBase("assets/images/slide2.jpg"),
+      withBase("assets/images/slide3.jpg"),
     ],
   },
   closing: {
