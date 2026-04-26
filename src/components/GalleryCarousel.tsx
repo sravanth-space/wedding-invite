@@ -1,4 +1,9 @@
-export default function GalleryCarousel({ id, images }) {
+type GalleryCarouselProps = {
+  id: string;
+  images: string[];
+};
+
+export default function GalleryCarousel({ id, images }: GalleryCarouselProps) {
   return (
     <div id={id} className="carousel slide mt-4" data-bs-ride="carousel">
       <div className="carousel-indicators">
@@ -17,7 +22,10 @@ export default function GalleryCarousel({ id, images }) {
 
       <div className="carousel-inner rounded-4">
         {images.map((image, index) => (
-          <div key={`${id}-image-${index + 1}`} className={`carousel-item ${index === 0 ? "active" : ""}`}>
+          <div
+            key={`${id}-image-${index + 1}`}
+            className={`carousel-item ${index === 0 ? "active" : ""}`}
+          >
             <img src={image} alt={`Moment ${index + 1}`} className="d-block w-100" />
           </div>
         ))}

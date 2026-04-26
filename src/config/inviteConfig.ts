@@ -1,6 +1,75 @@
-const withBase = (path) => `${import.meta.env.BASE_URL.replace(/\/$/, "")}/${path.replace(/^\/+/, "")}`;
+type InviteConfig = {
+  couple: {
+    title: string;
+    titleLogo: string;
+    groomName: string;
+    brideName: string;
+    heroMessage: string;
+  };
+  home: {
+    time: string;
+    dateLabel: string;
+    locationLabel: string;
+  };
+  brideAndGroom: {
+    groom: {
+      name: string;
+      details: string;
+      image: string;
+    };
+    bride: {
+      name: string;
+      details: string;
+      image: string;
+    };
+  };
+  events: Array<{
+    title: string;
+    venue: string;
+    time: string;
+    date: string;
+    address: string;
+    mapEmbed: string;
+    mapLink: string;
+  }>;
+  countdown: {
+    heading: string;
+    subheading: string;
+    targetDateTime: string;
+  };
+  invitationText: {
+    heading: string;
+    body: string;
+    signoff: string;
+    family: string;
+  };
+  gallery: {
+    title: string;
+    carouselOne: string[];
+    carouselTwo: string[];
+  };
+  closing: {
+    lead: string;
+    title: string;
+    sub: string;
+  };
+  media: {
+    musicUrl: string;
+    welcomeImage: string;
+    decorations: {
+      left: string;
+      right: string;
+      topLeft: string;
+      topRight: string;
+      center: string;
+      bgPattern: string;
+    };
+  };
+};
 
-export const inviteConfig = {
+const withBase = (path: string) => `${import.meta.env.BASE_URL.replace(/\/$/, "")}/${path.replace(/^\/+/, "")}`;
+
+export const inviteConfig: InviteConfig = {
   couple: {
     title: "SS Wedding",
     titleLogo: "assets/images/Wedding.png",
@@ -36,16 +105,6 @@ export const inviteConfig = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.4072051304192!2d81.92278379999999!3d16.8557393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37973906aeba39%3A0xe1e87f4e036f508a!2sBabu%20%26%20Babu%20Convention%20and%20Rooms!5e0!3m2!1sen!2sin!4v1777195169177!5m2!1sen!2sin",
       mapLink: "https://maps.app.goo.gl/X36ZR7wZhNXcdV8j9",
     },
-    // {
-    //   title: "Wedding",
-    //   venue: "Chakravarthy Lalitha A/C Marriage Hall",
-    //   time: "10:30 - 12:00 AM",
-    //   date: "10 February 2027",
-    //   address: "Alamuru, road, beside Ayyapa swamy temple, Mandapeta, Andhra Pradesh 533308",
-    //   mapEmbed:
-    //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.4072051304192!2d81.92278379999999!3d16.8557393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37973906aeba39%3A0xe1e87f4e036f508a!2sBabu%20%26%20Babu%20Convention%20and%20Rooms!5e0!3m2!1sen!2sin!4v1777195169177!5m2!1sen!2sin",
-    //   mapLink: "https://maps.app.goo.gl/X36ZR7wZhNXcdV8j9",
-    // },
   ],
   countdown: {
     heading: "We Are Getting Married",

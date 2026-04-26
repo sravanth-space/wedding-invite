@@ -1,7 +1,18 @@
 import { useEffect, useState } from "react";
 
-export default function Countdown({ targetDateTime }) {
-  const calculate = () => {
+type CountdownProps = {
+  targetDateTime: string;
+};
+
+type CountdownTime = {
+  day: number;
+  hour: string;
+  minute: string;
+  second: string;
+};
+
+export default function Countdown({ targetDateTime }: CountdownProps) {
+  const calculate = (): CountdownTime => {
     const target = new Date(targetDateTime).getTime();
     const now = Date.now();
     const distance = target - now;
@@ -25,7 +36,7 @@ export default function Countdown({ targetDateTime }) {
     return { day, hour, minute, second };
   };
 
-  const [time, setTime] = useState(calculate);
+  const [time, setTime] = useState<CountdownTime>(calculate);
 
   useEffect(() => {
     const id = window.setInterval(() => {

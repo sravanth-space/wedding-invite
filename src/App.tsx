@@ -87,20 +87,26 @@ export default function App() {
 
     playOpeningConfetti();
 
-    audio.play().then(() => {
-      setIsMusicPlaying(true);
-    }).catch(() => {
-      setIsMusicPlaying(false);
-    });
+    audio
+      .play()
+      .then(() => {
+        setIsMusicPlaying(true);
+      })
+      .catch(() => {
+        setIsMusicPlaying(false);
+      });
   };
 
   const toggleMusic = () => {
     if (audio.paused) {
-      audio.play().then(() => {
-        setIsMusicPlaying(true);
-      }).catch(() => {
-        setIsMusicPlaying(false);
-      });
+      audio
+        .play()
+        .then(() => {
+          setIsMusicPlaying(true);
+        })
+        .catch(() => {
+          setIsMusicPlaying(false);
+        });
       return;
     }
 
@@ -112,7 +118,12 @@ export default function App() {
     <>
       <BottomNav />
 
-      <main data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-smooth-scroll="true" tabIndex="0">
+      <main
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-menu"
+        data-bs-smooth-scroll="true"
+        tabIndex={0}
+      >
         <HeroSection />
         <BrideAndGroomSection />
         <VenueSection />
@@ -122,7 +133,11 @@ export default function App() {
       </main>
 
       <WelcomeOverlay isInviteOpen={isInviteOpen} onOpenInvite={openInvite} />
-      <MusicButton isInviteOpen={isInviteOpen} isMusicPlaying={isMusicPlaying} onToggleMusic={toggleMusic} />
+      <MusicButton
+        isInviteOpen={isInviteOpen}
+        isMusicPlaying={isMusicPlaying}
+        onToggleMusic={toggleMusic}
+      />
     </>
   );
 }
