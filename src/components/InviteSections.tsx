@@ -36,7 +36,7 @@ export function BottomNav() {
     <nav id="navbar-menu" className="navbar navbar-expand fixed-bottom rounded-top-4 border-top p-0 bottom-menu">
       <ul className="navbar-nav nav-justified w-100 align-items-center">
         <li className="nav-item"><a className="nav-link" href="#home"><i className="fa-solid fa-house" /><span>Home</span></a></li>
-        <li className="nav-item"><a className="nav-link" href="#bride"><i className="fa-solid fa-user-group" /><span>Bride</span></a></li>
+        <li className="nav-item"><a className="nav-link" href="#bride"><i className="fa-solid fa-user-group" /><span>Bride&amp;Groom</span></a></li>
         <li className="nav-item"><a className="nav-link" href="#venue"><i className="fa-solid fa-location-dot" /><span>Venue</span></a></li>
         <li className="nav-item"><a className="nav-link" href="#wedding-date"><i className="fa-solid fa-calendar-check" /><span>Date</span></a></li>
         <li className="nav-item"><a className="nav-link" href="#gallery"><i className="fa-solid fa-images" /><span>Gallery</span></a></li>
