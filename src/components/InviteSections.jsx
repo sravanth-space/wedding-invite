@@ -44,7 +44,8 @@ export function HeroSection() {
                 <img src={inviteConfig.media.welcomeImage} className="welcome-icon" alt="Welcome" />
                 <p className="intro-text">{inviteConfig.couple.heroMessage.split("\\n").map((line) => <span key={line}>{line}<br /></span>)}</p>
 
-                <div className="title-section" style={{ "--center-bg-url": `url('${inviteConfig.media.decorations.center}')` }}>
+                <div className="title-section">
+                    <img src={inviteConfig.media.decorations.center} className="title-circle" alt="" aria-hidden="true" />
                     <div className="inner-title-section">
                         <p className="name">{inviteConfig.couple.groomName}</p>
                         <p className="name and">&amp;</p>
