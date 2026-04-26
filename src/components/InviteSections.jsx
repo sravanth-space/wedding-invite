@@ -2,6 +2,23 @@ import { inviteConfig } from "../config/inviteConfig";
 import Countdown from "./Countdown";
 import GalleryCarousel from "./GalleryCarousel";
 
+function renderOrdinalDate(dateLabel) {
+    const match = dateLabel.match(/^(\d+)(st|nd|rd|th)\s+(.*)$/i);
+
+    if (!match) {
+        return dateLabel;
+    }
+
+    const [, day, suffix, rest] = match;
+
+    return (
+        <>
+            {day}
+            <sup>{suffix}</sup> {rest}
+        </>
+    );
+}
+
 export function BottomNav() {
     return (
         <nav id="navbar-menu" className="navbar navbar-expand fixed-bottom rounded-top-4 border-top p-0 bottom-menu">
@@ -37,7 +54,7 @@ export function HeroSection() {
 
                 <div className="wrap-details">
                     <div className="main-date">
-                        <p>{inviteConfig.home.dateLabel}</p>
+                        <p>{renderOrdinalDate(inviteConfig.home.dateLabel)}</p>
                         <p>{inviteConfig.home.time}</p>
                     </div>
                     <div className="wrap-location">

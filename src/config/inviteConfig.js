@@ -10,7 +10,7 @@ export const inviteConfig = {
   },
   home: {
     time: "night 12:15",
-    dateLabel: "03 May 2026",
+    dateLabel: "3rd May 2026",
     locationLabel: "Babu and Babu Convention",
   },
   brideAndGroom: {
