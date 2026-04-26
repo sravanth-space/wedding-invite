@@ -32,9 +32,14 @@ export default function App() {
 
     return () => {
       document.body.style.overflow = "auto";
-      audio.pause();
     };
   }, [isInviteOpen, audio]);
+
+  useEffect(() => {
+    return () => {
+      audio.pause();
+    };
+  }, [audio]);
 
   const openInvite = () => {
     setIsInviteOpen(true);
