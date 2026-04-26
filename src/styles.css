@@ -113,6 +113,10 @@ body {
     color: var(--primary-color);
 }
 
+.title.main {
+    padding-top: 2.5rem;
+}
+
 .title-section {
     position: relative;
     min-height: 12rem;
