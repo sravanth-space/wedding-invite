@@ -59,15 +59,15 @@ export function BrideAndGroomSection() {
       <h2 className="font-esthetic py-4 m-0 section-heading">Bride &amp; Groom</h2>
       <div className="overflow-x-hidden pb-4">
         <div data-aos="fade-right" data-aos-duration="1800">
-          <img src={inviteConfig.brideAndGroom.groom.image} alt="Groom" className="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto" />
+          <img src={inviteConfig.brideAndGroom.groom.image} alt="Groom" className="img-center-crop rounded-circle border border-1 border-light shadow my-0 mx-auto" />
           <h2 className="font-esthetic m-0 person-name">{inviteConfig.brideAndGroom.groom.name}</h2>
           <p className="mt-3 mb-1 subtext">{inviteConfig.brideAndGroom.groom.details}</p>
         </div>
 
-        <h2 className="font-esthetic my-4 amp">&amp;</h2>
+        <h2 className="font-esthetic my-2 amp">&amp;</h2>
 
         <div data-aos="fade-left" data-aos-duration="1800">
-          <img src={inviteConfig.brideAndGroom.bride.image} alt="Bride" className="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto" />
+          <img src={inviteConfig.brideAndGroom.bride.image} alt="Bride" className="img-center-crop rounded-circle border border-1 border-light shadow my-0 mx-auto" />
           <h2 className="font-esthetic m-0 person-name">{inviteConfig.brideAndGroom.bride.name}</h2>
           <p className="mt-3 mb-1 subtext">{inviteConfig.brideAndGroom.bride.details}</p>
         </div>
