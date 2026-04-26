@@ -17,7 +17,7 @@ export const inviteConfig = {
     groom: {
       name: "B. Sravanth",
       details: "Son of Mr. & Mrs. Nagaraju and Bharathi",
-      image: withBase("assets/images/sravanth.JPG"),
+      image: withBase("assets/images/sravanth.jpeg"),
     },
     bride: {
       name: "G. Samaikya",
